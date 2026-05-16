@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #020d1a; }
+::-webkit-scrollbar-thumb { background: #0e6ba8; border-radius: 2px; }
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-ocean-deep py-4 px-11 text-[13px] tracking-[2px] uppercase border-none cursor-pointer font-sans font-semibold transition-all duration-300 inline-block hover:bg-gold-light hover:-translate-y-[2px];
+  }
+  .btn-outline {
+    @apply bg-transparent text-white border border-white/40 py-4 px-11 text-[13px] tracking-[2px] uppercase cursor-pointer font-sans transition-all duration-300 inline-block hover:border-ocean-bright hover:text-ocean-foam;
+  }
+  .section-label {
+    @apply text-[10px] tracking-[5px] text-ocean-bright uppercase mb-4;
+  }
+  .section-title {
+    @apply font-serif text-[clamp(36px,5vw,64px)] font-bold leading-[1.1] mb-5;
+  }
+  .divider {
+    @apply w-[60px] h-[1px] my-5 bg-gradient-to-r from-gold to-transparent;
   }
 }
