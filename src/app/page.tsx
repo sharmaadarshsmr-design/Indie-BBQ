@@ -78,7 +78,7 @@ export default function Home() {
             <div className="divider" />
           </motion.div>
 
-          <div className="flex gap-0 mb-16 border-b border-ocean-bright/20 overflow-x-auto scrollbar-hide">
+          <div className="flex gap-0 mb-16 border-b border-ocean-bright/20 overflow-x-auto scrollbar-hide justify-center">
             {tabs.map((tab) => (
               <button
                 key={tab.id}

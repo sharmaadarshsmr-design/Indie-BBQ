@@ -40,13 +40,7 @@ export default function Footer() {
           <h4 className="text-[11px] tracking-[3px] uppercase text-ocean-bright mb-5">Hours</h4>
           <ul className="flex flex-col gap-2 list-none">
             <li className="text-[14px] text-textMuted cursor-default">Mon – Sun</li>
-            <li className="text-[14px] text-ocean-foam cursor-default font-medium">12:00 PM – 11:30 PM</li>
-            
-            <li className="text-[14px] text-textMuted cursor-default mt-2">Lunch</li>
-            <li className="text-[14px] text-ocean-foam cursor-default font-medium">12:00 – 3:30 PM</li>
-            
-            <li className="text-[14px] text-textMuted cursor-default mt-2">Dinner</li>
-            <li className="text-[14px] text-ocean-foam cursor-default font-medium">7:00 – 11:30 PM</li>
+            <li className="text-[14px] text-ocean-foam cursor-default font-medium">9:00 AM – 10:00 PM</li>
           </ul>
         </div>
 
