@@ -70,7 +70,7 @@ export default function Home() {
       <HeroSection />
 
       {/* MENU SECTION */}
-      <section id="menu" className="relative z-10 py-[120px] bg-gradient-to-b from-transparent via-[#041d3580] to-transparent">
+      <section id="menu" className="relative z-10 py-[80px] md:py-[120px] bg-gradient-to-b from-transparent via-[#041d3580] to-transparent">
         <div className="max-w-[1200px] mx-auto px-6 md:px-16">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}>
             <p className="section-label">The Full Experience</p>
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* SEAFOOD BOIL SPOTLIGHT */}
-      <section id="seafood-boil" className="relative z-10 py-[120px] bg-[radial-gradient(ellipse_at_center,rgba(14,107,168,0.15)_0%,transparent_70%)]">
+      <section id="seafood-boil" className="relative z-10 py-[80px] md:py-[120px] bg-[radial-gradient(ellipse_at_center,rgba(14,107,168,0.15)_0%,transparent_70%)]">
         <div className="max-w-[1200px] mx-auto px-6 md:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}>
@@ -144,12 +144,12 @@ export default function Home() {
               </div>
             </motion.div>
             
-            <motion.div className="relative flex items-center justify-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } } }}>
-              <div className="w-[300px] h-[300px] md:w-[420px] md:h-[420px] rounded-full border border-ocean-bright/30 flex items-center justify-center relative shrink-0">
-                <div className="absolute w-[260px] h-[260px] md:w-[380px] md:h-[380px] rounded-full border border-dashed border-ocean-bright/15 animate-spin-slow" />
-                <div className="w-[220px] h-[220px] md:w-[320px] md:h-[320px] rounded-full bg-[radial-gradient(circle,rgba(14,107,168,0.3)_0%,rgba(4,29,53,0.8)_100%)] flex flex-col items-center justify-center text-center p-6 md:p-[30px] border border-ocean-bright/40 relative z-10">
-                  <div className="font-cursive text-[20px] text-gold mb-3">What&apos;s in the pot</div>
-                  <div className="text-[12px] text-textMuted leading-[2.2] tracking-[0.5px]">
+            <motion.div className="relative flex items-center justify-center mt-6 lg:mt-0" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } } }}>
+              <div className="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] md:w-[400px] md:h-[400px] rounded-full border border-ocean-bright/30 flex items-center justify-center relative shrink-0">
+                <div className="absolute w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[360px] md:h-[360px] rounded-full border border-dashed border-ocean-bright/15 animate-spin-slow" />
+                <div className="w-[190px] h-[190px] sm:w-[240px] sm:h-[240px] md:w-[300px] md:h-[300px] rounded-full bg-[radial-gradient(circle,rgba(14,107,168,0.3)_0%,rgba(4,29,53,0.8)_100%)] flex flex-col items-center justify-center text-center p-4 sm:p-6 md:p-[30px] border border-ocean-bright/40 relative z-10">
+                  <div className="font-cursive text-[16px] sm:text-[18px] md:text-[20px] text-gold mb-2 sm:mb-3">What&apos;s in the pot</div>
+                  <div className="text-[10px] sm:text-[11px] md:text-[12px] text-textMuted leading-[2] tracking-[0.5px]">
                     <strong className="text-ocean-foam font-medium">5 pcs Prawns</strong><br />
                     <strong className="text-ocean-foam font-medium">5 pcs Octopus</strong><br />
                     <strong className="text-ocean-foam font-medium">1 full Crab</strong><br />
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* AMBIENCE SECTION */}
-      <section id="gallery" className="relative z-10 py-[120px] bg-gradient-to-b from-transparent via-[#062a4a66] to-transparent">
+      <section id="gallery" className="relative z-10 py-[80px] md:py-[120px] bg-gradient-to-b from-transparent via-[#062a4a66] to-transparent">
         <div className="max-w-[1200px] mx-auto px-6 md:px-16">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}>
             <p className="section-label">The Space</p>
@@ -174,11 +174,11 @@ export default function Home() {
             <div className="divider" />
             <p className="text-textMuted max-w-[500px] leading-[1.8] mt-4">
               Step into an underwater world. Our hand-painted murals, dramatic lighting,
-              and open tandoor create an atmosphere unlike any other in Noida.
+              and open tandoor create an atmosphere unlike any other.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-auto lg:grid-rows-[300px_300px] gap-1 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-[300px_300px] gap-1 mt-12">
             <div className="relative overflow-hidden lg:row-span-2 lg:col-span-2 bg-gradient-to-br from-[#041d35] to-[#0a3352] min-h-[300px]">
                <div className="absolute inset-0 bg-[#020d1a80] flex flex-col items-center justify-center gap-2">
                  <div className="text-[32px]">🐙</div>
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* RESERVATIONS */}
-      <section id="reservations" className="relative z-10 py-[120px] bg-[radial-gradient(ellipse_at_center_bottom,rgba(14,107,168,0.2)_0%,transparent_70%)]">
+      <section id="reservations" className="relative z-10 py-[80px] md:py-[120px] bg-[radial-gradient(ellipse_at_center_bottom,rgba(14,107,168,0.2)_0%,transparent_70%)]">
         <div className="max-w-[700px] mx-auto px-6 text-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}>
             <p className="section-label">Book Your Experience</p>
@@ -234,15 +234,15 @@ export default function Home() {
             >
               <div className="flex flex-col gap-2">
                 <label className="text-[11px] tracking-[2px] uppercase text-textMuted">Your Name</label>
-                <input required type="text" placeholder="Full name" className="bg-[#041d35cc] border border-ocean-bright/20 text-white p-3.5 text-[15px] outline-none transition-colors duration-300 focus:border-ocean-bright" />
+                <input required type="text" placeholder="Full name" className="bg-[#041d35cc] border border-ocean-bright/20 text-white p-3.5 text-[15px] outline-none transition-colors duration-300 focus:border-ocean-bright w-full" />
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-[11px] tracking-[2px] uppercase text-textMuted">Phone Number</label>
-                <input required type="tel" placeholder="+91 00000 00000" className="bg-[#041d35cc] border border-ocean-bright/20 text-white p-3.5 text-[15px] outline-none transition-colors duration-300 focus:border-ocean-bright" />
+                <input required type="tel" placeholder="+91 00000 00000" className="bg-[#041d35cc] border border-ocean-bright/20 text-white p-3.5 text-[15px] outline-none transition-colors duration-300 focus:border-ocean-bright w-full" />
               </div>
               <div className="flex flex-col gap-2 col-span-1 md:col-span-2">
                 <label className="text-[11px] tracking-[2px] uppercase text-textMuted">Email Address</label>
-                <input required type="email" placeholder="your@email.com" className="bg-[#041d35cc] border border-ocean-bright/20 text-white p-3.5 text-[15px] outline-none transition-colors duration-300 focus:border-ocean-bright" />
+                <input required type="email" placeholder="your@email.com" className="bg-[#041d35cc] border border-ocean-bright/20 text-white p-3.5 text-[15px] outline-none transition-colors duration-300 focus:border-ocean-bright w-full" />
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-[11px] tracking-[2px] uppercase text-textMuted">Number of Guests</label>

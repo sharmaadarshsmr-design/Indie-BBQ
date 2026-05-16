@@ -48,15 +48,15 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-5 justify-center mt-12"
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-12 w-full px-4 sm:px-0 sm:w-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.2 }}
         >
-          <Link href="#menu" className="btn-primary">
+          <Link href="#menu" className="btn-primary text-center">
             Explore Menu
           </Link>
-          <Link href="#reservations" className="btn-outline">
+          <Link href="#reservations" className="btn-outline text-center">
             Book a Table
           </Link>
         </motion.div>
