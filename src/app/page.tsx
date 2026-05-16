@@ -78,19 +78,25 @@ export default function Home() {
             <div className="divider" />
           </motion.div>
 
-          <div className="flex gap-0 mb-16 border-b border-ocean-bright/20 overflow-x-auto scrollbar-hide justify-center">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={clsx(
-                  "bg-transparent border-none py-3.5 px-7 text-[12px] tracking-[2px] uppercase cursor-pointer whitespace-nowrap relative transition-colors duration-300 font-sans border-b-2 mb-[-1px]",
-                  activeTab === tab.id ? "text-ocean-bright border-ocean-bright" : "text-textMuted border-transparent hover:text-ocean-foam"
-                )}
-              >
-                {tab.label}
-              </button>
-            ))}
+          {/* Menu Tabs - professional pill style, scrollable on mobile */}
+          <div className="mb-10">
+            <div className="flex overflow-x-auto scrollbar-hide gap-2 pb-2 md:pb-0 md:justify-center md:flex-wrap">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={clsx(
+                    "flex-shrink-0 py-2.5 px-5 text-[11px] tracking-[2px] uppercase cursor-pointer whitespace-nowrap transition-all duration-300 font-sans border rounded-none",
+                    activeTab === tab.id
+                      ? "bg-ocean-bright/20 text-ocean-bright border-ocean-bright"
+                      : "bg-transparent text-textMuted border-ocean-bright/20 hover:border-ocean-bright/50 hover:text-ocean-foam"
+                  )}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+            <div className="mt-5 w-full h-[1px] bg-gradient-to-r from-ocean-bright/30 via-ocean-bright/10 to-transparent" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px]">

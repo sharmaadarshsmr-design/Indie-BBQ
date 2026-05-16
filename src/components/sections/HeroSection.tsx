@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center text-center overflow-hidden">
+    <section id="hero" className="relative h-screen min-h-[700px] flex items-center justify-center text-center">
       {/* Background Gradients */}
       <div className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_50%_120%,rgba(14,107,168,0.4)_0%,transparent_60%),radial-gradient(ellipse_at_20%_50%,rgba(4,29,53,0.8)_0%,transparent_50%),linear-gradient(180deg,#020d1a_0%,#041d35_40%,#062a4a_70%,#041d35_100%)]" />
 
@@ -63,13 +63,13 @@ export default function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
-        initial={{ opacity: 0, y: 30 }}
+        className="absolute bottom-8 inset-x-0 z-10 flex flex-col items-center gap-2"
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.6 }}
       >
-        <span className="text-[10px] tracking-[3px] text-textMuted uppercase">Scroll</span>
-        <div className="w-[1px] h-[50px] bg-gradient-to-b from-ocean-bright to-transparent animate-scroll-pulse" />
+        <span className="text-[9px] tracking-[4px] text-textMuted uppercase">Scroll</span>
+        <div className="w-[1px] h-[44px] bg-gradient-to-b from-ocean-bright to-transparent animate-scroll-pulse" />
       </motion.div>
     </section>
   );
